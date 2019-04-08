@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+    int n[8];
+    int a;
+    int i=7;
+    int x;
+    printf("Enter number \n");
+    scanf("%d",&a);
+    
+    while(i>=0)
+    {
+        
+        x=a%2;
+        n[i]=x;
+        a=a/2;
+        i--;
+        
+    }
+    printf("Binary form of the given number is: \n %d %d %d %d %d %d %d %d",n[0],n[1],n[2],n[3],n[4],n[5],n[6],n[7]);
+    
+}
